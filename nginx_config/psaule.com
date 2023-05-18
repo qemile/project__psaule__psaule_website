@@ -5,10 +5,10 @@ server {
     listen [::]:80;
 
     # The www host server name.
-    server_name www.example.com;
+    server_name www.psaule.com;
 
     # Redirect to the non-www version.
-    return 301 $scheme://example.com$request_uri;
+    return 301 $scheme://psaule.com$request_uri;
 }
 
 server {
@@ -16,10 +16,10 @@ server {
     listen [::]:80;
 
     # The non-www host server name.
-    server_name example.com;
+    server_name psaule.com;
 
     # The document root path.
-    root /var/www/example.com/public;
+    root /var/www/psaule.com/public;
 
     # The charset.
     charset utf-8;
@@ -37,8 +37,8 @@ server {
     error_page 404 /404.html;
 
     # Log configuration.
-    error_log /etc/nginx/logs/example.com_error.log error;
-    access_log /etc/nginx/logs/example.com_access.log main;
+    error_log /etc/nginx/logs/psaule.com_error.log error;
+    access_log /etc/nginx/logs/psaule.com_access.log main;
 
     # Include basic configuration.
     include snippets/basic.conf;

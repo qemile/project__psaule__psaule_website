@@ -12,4 +12,3 @@ sudo nginx -t
 # Tell Nginx to reload the configuration file
 # echo "Relog nginx"
 sudo service nginx reload
-
