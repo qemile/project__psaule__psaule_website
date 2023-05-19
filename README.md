@@ -6,6 +6,9 @@ Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-templa
 Author: BootstrapMade.com
 License: https://bootstrapmade.com/license/
 
+## Certificat SSL
+
+Chronique : Installé le 19-05-2023 sur psaule-ec2-micro (`52.47.127.155`) avec `emile.quenee@gmail.com`
 
 ## Getting started
 
