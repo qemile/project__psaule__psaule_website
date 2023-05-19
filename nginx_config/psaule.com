@@ -1,19 +1,23 @@
 # From site.conf of base_config
 
 server {
-    listen 80;
-    listen [::]:80;
 
     # The www host server name.
     server_name www.psaule.com;
 
     # Redirect to the non-www version.
     return 301 $scheme://psaule.com$request_uri;
+
+    listen [::]:443 ssl; # managed by Certbot
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/psaule.com/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/psaule.com/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
 }
 
 server {
-    listen 80;
-    listen [::]:80;
 
     # The non-www host server name.
     server_name psaule.com;
@@ -51,4 +55,41 @@ server {
 
     # Include basic configuration.
     include snippets/basic.conf;
+
+    listen [::]:443 ssl ipv6only=on; # managed by Certbot
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/psaule.com/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/psaule.com/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+
+}
+
+
+server {
+    if ($host = psaule.com) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+    listen 80;
+    listen [::]:80;
+    server_name psaule.com;
+    return 404; # managed by Certbot
+
+
+}
+
+server {
+    if ($host = www.psaule.com) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+    listen 80;
+    listen [::]:80;
+    server_name www.psaule.com;
+    return 404; # managed by Certbot
+
+
 }

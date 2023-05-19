@@ -9,8 +9,14 @@ Cf. developpment/ (WARN : out-of-date)
 ### Setup server
 
 ```sh
-# Change nginx conf
+# Push nginx conf
 rsync -avhp /home/emile/Documents/project/psaule-site/nginx_config/psaule.com psaule-ec2-micro:/etc/nginx/sites-available/psaule.com --rsync-path="sudo rsync"
+
+# Pull nginx conf
+rsync -avhp psaule-ec2-micro:/etc/nginx/sites-available/psaule.com /home/emile/Documents/project/psaule-site/nginx_config/psaule.com
+
+# Pull and bak nginx conf
+rsync -avhp psaule-ec2-micro:/etc/nginx/ /home/emile/Documents/project/psaule-site/nginx_config/nginx.psaule-ec2-micro.bak
 ```
 
 ### Deploy site
