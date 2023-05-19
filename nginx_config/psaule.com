@@ -35,7 +35,11 @@ server {
     location / {
         # First attempt to serve request as a file, then as a directory, then
         # fallback to display 404 Not Found.
-        try_files $uri $uri/ =404;
+        try_files $uri $uri/ @redirect;
+    }
+
+    location @redirect {
+        return 301 /;
     }
 
     # Custom 404 page.

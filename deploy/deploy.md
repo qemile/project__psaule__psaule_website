@@ -2,7 +2,7 @@
 
 ## Developpement
 
-Cf developpment (WARN : out-of-date)
+Cf. developpment/ (WARN : out-of-date)
 
 ## Production
 
