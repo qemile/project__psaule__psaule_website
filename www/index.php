@@ -7,10 +7,10 @@
 
   <title>Psaule</title>
   <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="Psaule musique artiste piano improvisation classique jazz" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/psaule_favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Vendor CSS Files -->
@@ -54,7 +54,7 @@
 
     <!-- ======= Separation Section ======= -->
 
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/se_repose.png)">
+    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/psaule_concert_3.jpg)">
       <!-- <div class="overlay-mf"></div> -->
     </div>
 
@@ -64,13 +64,12 @@
 
     <!-- ======= Separation Section ======= -->
 
-    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/nature_loin.png)">
-      <!-- <div class="overlay-mf"></div> -->
-    </div>
+    <!-- <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/se_repose.png)">
+    </div> -->
 
     <!-- ======= Blog Section ======= -->
 
-    <?php include 'section_article.html'; ?>
+    <?php /* include 'section_article.html'; */ ?>
 
     <!-- ======= Contact Section ======= -->
 

@@ -1465,10 +1465,31 @@ footer .credits a {
 # Custom
 --------------------------------------------------------------*/
 
+.home-psaule-title {
+  color: #fff;
+  font-weight: 600;
+  /* padding-bottom: 330px; */
+  padding-top: 475px;
+  font-size: 55px;
+  margin-left: 613px;
+  opacity: 0.8;
+}
+
+.header-psaule-logo {
+  height: 70px;
+}
+
+.home-psaule-logo {
+  margin-bottom: 425px;
+}
+
 .image-contact {
   overflow: hidden;
 }
 
 footer .copyright-box {
   color: #000000;
+}
+.presentation-text {
+  text-align: center;
 }
