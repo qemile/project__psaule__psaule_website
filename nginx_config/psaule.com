@@ -25,7 +25,12 @@ server {
     charset utf-8;
 
     # Files that will be used as index.
-    index index.html index.htm;
+    index index.php;
+
+    location ~ \.php$ {
+        include snippets/directive/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php8.1-fpm.sock;
+    }
 
     location / {
         # First attempt to serve request as a file, then as a directory, then
