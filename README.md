@@ -1,5 +1,23 @@
 # psaule-site
 
+## A faire
+
+- Système de rotation des fichiers de logs
+- Sécuriser l'infra
+- Système permettant de contrôler si le site est down
+- Tester installation sur t2.nano, AntonPutra conseillait d'avoir plus d'un coeur
+- Mettre en place outil mesure du trafic
+- Mettre en place wordpress
+- Mettre en place email @psaule.com
+- Enlever bootstrap et les dépendances de code inutile ou non maîtrisés
+- Faire de la modularisation html sans php
+- Faire des pages d'articles
+- Améliorer le SCIO (référencement)
+- Mettre en place gitlab CI ?
+- Monitorer le prix de l'instance
+
+## Références
+
 Inspiration : https://bootstrapmade.com/demo/DevFolio/
 Template Name: DevFolio
 Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
