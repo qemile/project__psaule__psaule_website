@@ -1405,6 +1405,13 @@ footer .credits a {
   opacity: 0.8;
 }
 
+@media only screen and (max-width: 1400px) {
+  .home-psaule-title {
+    padding-top: 265px;
+    margin-left: 0px;
+  }
+}
+
 .header-psaule-logo {
   height: 70px;
 }
