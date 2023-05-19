@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -22,65 +22,39 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: DevFolio
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
 
-  <?php include 'header.html'; ?>
+  <?php include 'includes/header.html'; ?>
 
   <!-- ======= Hero Section ======= -->
 
-  <?php include 'section_home.html'; ?>
+  <?php include 'includes/section_home.html'; ?>
 
 
   <main id="main">
+    <?php include 'includes/section_presentation.html'; ?>
 
-    <!-- ======= About Section ======= -->
-
-    <?php include 'section_presentation_2.html'; ?>
-
-    <!-- ======= Date Section ======= -->
-
-    <?php include 'section_date.html'; ?>
-
-    <!-- ======= Separation Section ======= -->
+    <?php include 'includes/section_date.html'; ?>
 
     <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/psaule_concert_3.jpg)">
       <!-- <div class="overlay-mf"></div> -->
     </div>
 
-    <!-- ======= Biographie Section ======= -->
-
-    <?php include 'section_biographie.html'; ?>
-
-    <!-- ======= Separation Section ======= -->
+    <?php include 'includes/section_biographie.html'; ?>
 
     <!-- <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/se_repose.png)">
     </div> -->
 
-    <!-- ======= Blog Section ======= -->
+    <?php /* include 'includes/section_article.html'; */ ?>
 
-    <?php /* include 'section_article.html'; */ ?>
+    <?php include 'includes/section_contact.html'; ?>
+  </main>
 
-    <!-- ======= Contact Section ======= -->
-
-    <?php include 'section_contact.html'; ?>
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-
-  <?php include 'footer.html'; ?>
-
+  <?php include 'includes/footer.html'; ?>
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
