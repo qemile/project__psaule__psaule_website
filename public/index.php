@@ -39,7 +39,7 @@
 
     <?php include 'includes/section_date.html'; ?>
 
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/psaule_concert_3.jpg)">
+    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/psaule_24112024_gradins.jpg)">
       <!-- <div class="overlay-mf"></div> -->
     </div>
 
