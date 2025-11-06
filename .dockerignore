@@ -1,0 +1,10 @@
+.git
+.gitignore
+.promptignore
+README.md
+deploy/
+nginx_config/
+res/
+public/assets/vendor/
+public/cgi-bin/
+*.tmp
