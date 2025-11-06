@@ -28,6 +28,12 @@ RUN echo 'server {' > /etc/nginx/conf.d/default.conf && \
     echo '    root /var/www/html;' >> /etc/nginx/conf.d/default.conf && \
     echo '    index index.php index.html;' >> /etc/nginx/conf.d/default.conf && \
     echo '' >> /etc/nginx/conf.d/default.conf && \
+    echo '    # Serve static files directly' >> /etc/nginx/conf.d/default.conf && \
+    echo '    location ~* \.(jpg|jpeg|png|gif|ico|css|js|svg|woff|woff2|ttf|eot|map)$ {' >> /etc/nginx/conf.d/default.conf && \
+    echo '        expires 1y;' >> /etc/nginx/conf.d/default.conf && \
+    echo '        access_log off;' >> /etc/nginx/conf.d/default.conf && \
+    echo '    }' >> /etc/nginx/conf.d/default.conf && \
+    echo '' >> /etc/nginx/conf.d/default.conf && \
     echo '    location / {' >> /etc/nginx/conf.d/default.conf && \
     echo '        try_files $uri $uri/ /index.php?$args;' >> /etc/nginx/conf.d/default.conf && \
     echo '    }' >> /etc/nginx/conf.d/default.conf && \

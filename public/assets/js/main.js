@@ -199,9 +199,17 @@
    */
   let preloader = select('#preloader');
   if (preloader) {
+    // Remove preloader on window load
     window.addEventListener('load', () => {
       preloader.remove()
     });
+    
+    // Fallback: remove preloader after 3 seconds max (in case some resources fail to load)
+    setTimeout(() => {
+      if (preloader && preloader.parentNode) {
+        preloader.remove()
+      }
+    }, 3000);
   }
 
     /**
